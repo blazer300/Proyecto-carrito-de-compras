@@ -40,7 +40,6 @@
 				<a href="index.html"> <span class="icon-home"></span> Home</a> 
 				<a href="register.html"><span class="icon-edit"></span> Registrarse </a> 
 				<a href="contact.html"><span class="icon-envelope"></span> Contactanos</a>
-				<a href="cart.html"><span class="icon-shopping-cart"></span> 0 Item(s) - <span class="badge badge-warning"> $0.00</span></a>
 			</div>
 		</div>
 	</div>
@@ -84,7 +83,7 @@ Seccion de Barra de Navegacion
 		  <div class="nav-collapse">
 			<ul class="nav">
 			  <li><a href="index.html">Home</a></li>
-			  <li class=""><a href="productos.html">Productos</a></li>
+			  <li class=""><a href="products.html">Productos</a></li>
 			</ul>
 			<form action="#" class="navbar-search pull-left">
 			  <input type="text" placeholder="Search" class="search-query span2">
@@ -95,16 +94,16 @@ Seccion de Barra de Navegacion
 				<div class="dropdown-menu">
 				<form class="form-horizontal loginFrm">
 				  <div class="control-group">
-					<input type="text" class="span2" id="inputEmail" placeholder="Email">
+					<input  type="text" name="usuario" id="usuario" placeholder="Usuario">
 				  </div>
 				  <div class="control-group">
-					<input type="password" class="span2" id="inputPassword" placeholder="Password">
+					<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
 				  </div>
 				  <div class="control-group">
 					<label class="checkbox">
 					<input type="checkbox"> Recordarme
 					</label>
-					<button type="submit" class="shopBtn btn-block">Ingresar</button>
+					<button type="button" value="Iniciar sesion" id="boton" onclick ="login()" class="shopBtn btn-block">Ingresar</button>
 				  </div>
 				</form>
 				</div>
@@ -121,18 +120,17 @@ Body Seccion
 <div id="sidebar" class="span3">
 <div class="well well-small">
 	<ul class="nav nav-list">
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Moda</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Relojes</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Joyeria Divina</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Joyeria Moda</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Compromiso y boda</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Joyeria de hombres</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Vintage & Antiguo</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Diamantes sueltos </a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Collares</a></li>
-		<li><a href="productos.html"><span class="icon-chevron-right"></span>Ver Todas las Joyerias y Relojes</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Moda</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Relojes</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Joyeria Divina</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Joyeria Moda</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Compromiso y boda</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Joyeria de hombres</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Vintage & Antiguo</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Diamantes sueltos </a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Collares</a></li>
+		<li><a href="products.html"><span class="icon-chevron-right"></span>Ver Todas las Joyerias y Relojes</a></li>
 		<li style="border:0"> &nbsp;</li>
-		<li> <a class="totalInCart" href="cart.html"><strong>Costo Total <span class="badge badge-warning pull-right" style="line-height:18px;">$0.00</span></strong></a></li>
 	</ul>
 </div>
 
@@ -257,11 +255,6 @@ Productos Nuevos
 				<div class="caption cntr">
 					<p>Brazalete de Oro y Joyas</p>
 					<p><strong> $2400.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Añadir al carrito </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Añadir a Deseados</a> 
-						<a class="pull-left" href="#"> Añadir a Comparacion </a>
-					</div> 
 					<br class="clr">
 				</div>
 			  </div>
@@ -272,11 +265,6 @@ Productos Nuevos
 				<div class="caption cntr">
 					<p>Brazalete de Deportivo</p>
 					<p><strong> $200.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Añadir al carrito </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Añadir a Deseados</a> 
-						<a class="pull-left" href="#"> Añadir a Comparacion </a>
-					</div> 
 					<br class="clr">
 				</div>
 			  </div>
@@ -287,11 +275,6 @@ Productos Nuevos
 				<div class="caption cntr">
 					<p>Reloj de Oro y Obsidiana</p>
 					<p><strong> $3400.00</strong></p>
-					<h4><a class="shopBtn" href="#" title="add to cart"> Añadir al Carrito </a></h4>
-					<div class="actionList">
-						<a class="pull-left" href="#">Añadir a Deseados </a> 
-						<a class="pull-left" href="#"> Añadir a Comparacion </a>
-					</div> 
 					<br class="clr">
 				</div>
 			  </div>
@@ -303,7 +286,7 @@ Productos Nuevos
 	Productos Destacados
 	-->
 		<div class="well well-small">
-		  <h3><a class="btn btn-mini pull-right" href="productos.html" title="View more">VIew More<span class="icon-plus"></span></a> Productos Destacados  </h3>
+		  <h3><a class="btn btn-mini pull-right" href="products.html" title="View more">VIew More<span class="icon-plus"></span></a> Productos Destacados  </h3>
 		  <hr class="soften"/>
 		  <div class="row-fluid">
 		  <ul class="thumbnails">
@@ -436,7 +419,6 @@ Podemos pagar mas porque contamos con laboratorio propio de refinamiento de oro 
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.easing-1.3.min.js"></script>
     <script src="assets/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-    <script src="assets/js/shop.js"></script>
-	<script src="assets/js/products.js"></script>
+    <script src="assets/js/login.js"></script>
   </body>
 </html>
